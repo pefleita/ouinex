@@ -23,9 +23,6 @@ html {
 body {
   background: url(../img/coming-soon-movil-bg.png);
   background-size: 100% 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
