@@ -236,14 +236,3 @@ footer .signature {
     margin-bottom: 0;
   }
 }
-
-@media (max-width: 430px) {
-  main.content h1 {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  main.content p {
-    padding: 10px 25px;
-  }
-}
