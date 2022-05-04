@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
-  padding: 40px 40px 0;
+  padding: 0px 40px;
   text-align: center;
 }
 
@@ -38,17 +38,22 @@ footer {
   width: 100%;
 }
 
+header{
+  padding-top: 20px;
+}
+
 header p {
   color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 0;
 }
 
 main.content {
   flex: 1;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 
 main.content h1 {
@@ -57,6 +62,7 @@ main.content h1 {
   font-weight: 700;
   font-size: 26px;
   line-height: 117%;
+  margin: 0;
   /*padding-left: 80px;
   padding-right: 80px;*/
 }
@@ -65,7 +71,8 @@ main.content p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  padding: 10px 80px;
+  padding: 10px 0px;
+  margin: 0;
 }
 
 main.content p.primary-text-color {
@@ -79,7 +86,7 @@ main.content p.secondary-text-color {
 }
 
 main .coming-soon-form {
-  margin-top: 120px;
+  margin-top: 200px;
 }
 
 main .coming-soon-form h2 {
@@ -106,6 +113,7 @@ main .coming-soon-form form input {
   text-align: center;
 }
 
+main .coming-soon-form form input,
 main .coming-soon-form form input::placeholder {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -139,7 +147,7 @@ footer {
   /*align-self: flex-end;*/
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 120px;
+  margin-top: 20px;
   /*margin-bottom: 20px;*/
 }
 
@@ -230,12 +238,12 @@ footer .signature {
 }
 
 @media (max-width: 430px) {
-    main.content h1 {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-  
-    main.content p {
-      padding: 10px 25px;
-    }
+  main.content h1 {
+    padding-left: 25px;
+    padding-right: 25px;
   }
+
+  main.content p {
+    padding: 10px 25px;
+  }
+}
