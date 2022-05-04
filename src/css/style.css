@@ -86,7 +86,7 @@ main.content p.secondary-text-color {
 }
 
 main .coming-soon-form {
-  margin-top: 200px;
+  margin-top: 160px;
 }
 
 main .coming-soon-form h2 {
@@ -147,7 +147,7 @@ footer {
   /*align-self: flex-end;*/
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin-top: 0px;
   /*margin-bottom: 20px;*/
 }
 
@@ -160,6 +160,7 @@ footer .social {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-bottom: 0;
   padding: 0;
 }
 
