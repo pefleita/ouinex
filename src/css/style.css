@@ -227,6 +227,8 @@ footer .signature {
 
   main .coming-soon-form h2 {
     font-size: 35px;
+    margin: 0;
+    margin-top: 70px;
   }
 
   main .coming-soon-form form {
