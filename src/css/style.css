@@ -139,7 +139,7 @@ main .coming-soon-form form button {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.04em;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 footer {
@@ -226,9 +226,9 @@ footer .signature {
   }
 
   main .coming-soon-form h2 {
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 85px;
   }
 
   main .coming-soon-form form {
