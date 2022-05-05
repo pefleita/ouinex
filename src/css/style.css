@@ -84,7 +84,6 @@ main.content p.primary-text-color {
 main.content p.secondary-text-color {
   color: var(--secondary-text-color);
   line-height: 16px;
-  padding-top: 0;
 }
 
 main .coming-soon-form {
@@ -209,16 +208,16 @@ footer .signature {
     width: 680px;
   }
 
-  main.content {
-    /*margin-top: 75px;*/
-  }
-
   main.content p {
     padding: 10px 80px;
   }
 
   main.content h1 {
     font-size: 35px;
+  }
+
+  main.content p.secondary-text-color {
+    padding-top: 0px;
   }
 
   main .coming-soon-form {
