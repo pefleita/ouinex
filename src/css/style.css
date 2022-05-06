@@ -2,8 +2,8 @@
 */
 :root {
   --primary-color: #07bf7d;
-  --secondary-color: #194766;
   --primary-text-color: #888;
+  --secondary-color: #194766;
   --secondary-text-color: #07bf7d;
 }
 /* END CSS Variables*/
@@ -15,20 +15,21 @@
 /* END Import Montserrat Font*/
 
 html {
-  min-height: 100vh;
-  position: relative;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 body {
   background: url(../img/coming-soon-movil-bg.png);
-  background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   /*background-attachment: fixed;*/
   display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh;
+  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  height: 100vh;
   padding: 0px 20px;
   text-align: center;
 }
@@ -54,7 +55,8 @@ header p {
 
 main.content {
   flex: 1;
-  /*margin-top: 60px;*/
+  margin-top: 0px;
+  position: relative;
 }
 
 main.content h1 {
@@ -72,8 +74,8 @@ main.content p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  padding: 10px 0px;
   margin: 0;
+  padding: 10px 0px;
 }
 
 main.content p.primary-text-color {
@@ -87,7 +89,11 @@ main.content p.secondary-text-color {
 }
 
 main .coming-soon-form {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+  bottom: 15%;
+  left: 0;
+  position: absolute;
+  right: 0;
 }
 
 main .coming-soon-form h2 {
@@ -99,30 +105,34 @@ main .coming-soon-form h2 {
 }
 
 main .coming-soon-form form {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 main .coming-soon-form form input {
-  width: 330px;
-  height: 43px;
   background: rgba(196, 196, 196, 0.22);
   border: 1px solid #eff0f2;
   box-sizing: border-box;
   border-radius: 48px;
+  height: 43px;
   text-align: center;
+  width: 330px;
 }
 
 main .coming-soon-form form input,
-main .coming-soon-form form input::placeholder {
+main .coming-soon-form form input::placeholder,
+main .coming-soon-form form input::-ms-input-placeholder,
+main .coming-soon-form form input:-ms-input-placeholder,
+main .coming-soon-form form input::-moz-placeholder,
+main .coming-soon-form form input::-webkit-input-placeholder {
+  color: #cacaca;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  color: #cacaca;
 }
 
 main .coming-soon-form form button {
@@ -130,16 +140,16 @@ main .coming-soon-form form button {
   border: 0;
   border-radius: 54px;
   color: #fff;
-  width: 138px;
-  height: 42px;
-  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 24px;
-  text-align: center;
+  height: 42px;
   letter-spacing: 0.04em;
+  line-height: 24px;
   margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 138px;
 }
 
 footer {
@@ -176,9 +186,9 @@ footer .signature {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  text-align: center;
   margin: 0;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 @media (min-width: 535px) {
@@ -190,22 +200,26 @@ footer .signature {
 
 @media (min-width: 700px) {
   body {
+    align-items: center;
     background: url(../img/coming-soon-desktop-bg.png);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
     background-color: #f3f3f3;
+    /*background-attachment: fixed;*/
+    /*flex-wrap: nowrap;*/
+    flex-direction: column;
+    justify-content: center;
   }
 
   header,
   main.content,
   footer {
     width: 680px;
+  }
+
+  main.content {
+    margin-top: 0px;
   }
 
   main.content p {
@@ -221,7 +235,7 @@ footer .signature {
   }
 
   main .coming-soon-form {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
     /*margin-bottom: 130px;*/
   }
 
@@ -249,5 +263,11 @@ footer .signature {
   footer .signature {
     margin-bottom: 0;
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1281px) {
+  main .coming-soon-form {
+    bottom: 20%;
   }
 }
