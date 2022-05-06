@@ -56,7 +56,7 @@ header p {
 main.content {
   flex: 1;
   margin-top: 0px;
-  /*position: relative;*/
+  position: relative;
 }
 
 main.content h1 {
@@ -89,19 +89,18 @@ main.content p.secondary-text-color {
 }
 
 main .text-over-form {
-  /*position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;*/
+  right: 0;
 }
 
 main .coming-soon-form {
   /*margin-top: 30px;*/
-  bottom: 0;
+  bottom: 15%;
   left: 0;
   position: absolute;
   right: 0;
-  top: 60%;
 }
 
 main .coming-soon-form h2 {
