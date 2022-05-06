@@ -102,6 +102,8 @@ main .coming-soon-form h2 {
   font-weight: 700;
   font-size: 28px;
   line-height: 117%;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 main .coming-soon-form form {
@@ -242,7 +244,7 @@ footer .signature {
   main .coming-soon-form h2 {
     font-size: 30px;
     margin: 0;
-    margin-top: 85px;
+    margin-bottom: 20px;
   }
 
   main .coming-soon-form form {
