@@ -11,6 +11,23 @@
 
     <link rel="stylesheet" href="src/css/normalize.min.css" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <script>
+      function setDocHeight() {
+        document.documentElement.style.setProperty(
+          "--vh",
+          `${window.innerHeight / 100}px`
+        );
+      }
+
+      window.addEventListener("resize", function () {
+        setDocHeight();
+      });
+      window.addEventListener("orientationchange", function () {
+        setDocHeight();
+      });
+
+      setDocHeight();
+    </script>
   </head>
   <body>
     <header>
