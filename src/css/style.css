@@ -88,6 +88,13 @@ main.content p.secondary-text-color {
   line-height: 16px;
 }
 
+main .text-over-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 main .coming-soon-form {
   /*margin-top: 30px;*/
   bottom: 15%;
